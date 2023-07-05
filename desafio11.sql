@@ -1,0 +1,3 @@
+SELECT notes
+FROM purchase_orders
+WHERE SUBSTRING_INDEX(SUBSTRING_INDEX(notes, '#', -1), ' ', 1) BETWEEN 30 AND 39;
